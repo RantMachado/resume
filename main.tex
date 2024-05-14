@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Randolfo Machado Gama
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Randolfo Gama} \\ \vspace{1pt}
+    \small \href{https://api.whatsapp.com/send?1=pt_BR&phone=55219969461475}{\underline{+55 (21) 96946-1475}} $|$ \href{mailto:talktorandolph@live.com}{\underline{talktorandolph@live.com}} $|$ 
+    \href{https://www.linkedin.com/in/randolfo-gama-5375a2188/?locale=en_US}{\underline{linkedin.com/in/randolfo-gama-5375a2188/?locale=en_US}} $|$
+    \href{https://github.com/RantMachado}{\underline{github.com/RantMachado}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Centro Universitário Carioca}{Méier, RJ - Brazil}
+      {Analysis and systems development}{Aug. 2016 -- Dec. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{June 2020 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+      
+    \resumeSubSubheading
+      {Intern}{Nov 2016 - Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Developed Web Pages using ASP.NET (.NET Framework 4.6) and Oracle (11g) allowing users to Create, Update, Delete and View registers of associated doctors, events and hospitals for Brazilian Society of Dermatology (SBD)}
+        \resumeItem{Built and configurated Latin American Thyroid Society Website using WordPress, PHP and MySQL. The first version of website had pages to show upcoming events, posts and news, leadership and staff of LATS, awards that LATS gave to their associated doctors}
+        \resumeItem{Developed components using VB.NET (.NET Framework 4.6) for CIAD (a Windows System made to manage SBD associated doctors and their payments to keep them associated), for upload images, documents, forms with field validations}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Information Technology Support Specialist}{Sep. 2018 -- Present}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Gitlytics} $|$ \emph{Elixir, Phoenix, Vue.js, PostgreSQL, Docker}}{April 2024 -- Present}
+        \resumeItemListStart
+          \resumeItem{Developed a full-stack web application using Phoenix serving a REST API with Vue.js as the frontend}
+          \resumeItem{Implemented GitHub OAuth to connect to application}
+          \resumeItem{The application aims to be a finance control portal for its users}
+        \resumeItemListEnd
+%------------------------
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, PHP, C/C++, PL/SQL (Sql Server, Postgres, MySql), JavaScript, TypeScript, HTML/CSS, Elixir} \\
+     \textbf{Frameworks}{: .NET Core, React, Vue, Node.js, xUnit, Phoenix} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio} \\
+     \textbf{Databases}{: MySQL, MariaDB, SQL Server, Mongo DB, PostgresSQL, REDIS} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
